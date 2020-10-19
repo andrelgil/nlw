@@ -17,6 +17,15 @@
     animation-fill-mode: backwards;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 @keyframes right {
     from {
         transform: translateX(-100%);
@@ -28,5 +37,11 @@
 
 .animate-right {
     animation-name: right;
+    animation-duration: 600ms;
+}
+
+.animate-appear {
+    animation-name: appear;
     animation-duration: 300ms;
+    animation-fill-mode: backwards;
 }
